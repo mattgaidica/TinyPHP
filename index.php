@@ -1,4 +1,6 @@
 <?php
+// Probando GIT
+//Segunda
 ini_set('display_errors',TRUE);
 include_once('tinyphp.class.php');
 $tinyphp = new tinyPhp;
@@ -41,40 +43,14 @@ if(!empty($_POST['snippet'])) {
 <meta name="Description" content="" />
 <meta property="og:title" content="" />
 <meta property="og:description" content="" />
-<meta property="og:image" content="http://builtbyprime.com/img/logo.png" />
 <meta name='author' content='Prime'> 
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<link rel='shortcut icon' href='http://builtbyprime.com/favicon.ico?v=1'> 
-<link rel='stylesheet' href='http://builtbyprime.com/css/reset.css?v=1'>
-<link rel='stylesheet' href='http://builtbyprime.com/css/style.css?v=2'>
-<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:regular,bold,900'>
-<script src='http://builtbyprime.com/js/modernizr.js?v=1'></script>
+<link rel='stylesheet' href='reset.css?v=1'>
+<link rel='stylesheet' href='style.css?v=2'>
+<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Lato:regular,bold,900'>
+<script src='modernizr.js?v=1'></script>
 </head>
 <body id='tiny-php'>
-
-<header>
-  <div class='wrap'>
-    <a href='/' id='logo'>prime</a>
-    <nav>
-      <ul class='clearfix'>
-        <li><a href='http://builtbyprime.com' id='aboutTrigger'>about</a></li>
-        <li><a href='http://blog.builtbyprime.com'>blog</a></li>
-        <li><a href='#' id='contactTrigger'>contact</a></li>
-      </ul>
-      <div id='social'>
-        <a href='tel:+1-248-662-5668' id='phone'><h5>(248) 767-2948</h5></a>
-        <a href='//fb.me/primestudios' id='facebook'>facebook</a>
-        <a href='//twitter.com/primestudios' id='twitter'>B</a>
-      </div>
-    </nav>
-    <form id='contact-form'>
-      <h3>contact</h3>
-      <div class='input-wrap'><input type='text' id='email' placeholder='email address' /></div>
-      <div class='textarea-wrap'><textarea id='message' placeholder='message'></textarea></div>
-      <input type='submit' value='submit' /> or <a href='#'>cancel</a>
-    </form>
-  </div>
-</header>
 
 <div id="main">
 
@@ -83,9 +59,6 @@ if(!empty($_POST['snippet'])) {
     <div class='wrap'>
 
       <h1>Tiny PHP</h1>
-      <p>This is a tool you can use to condense your PHP code. While there are no real performance benefits to PHP with a smaller footprint, you may want to use one-liner methods, or obfuscate the code for a specific reason.</p>
-
-      <p>Here is the rundown:</p> 
       <ul id='tiny-rundown'> 
         <li>You must use PHP open/close tags</li> 
         <li>If PHP open/close tags are properly used, PHP can co-exist with HTML</li> 
@@ -99,7 +72,7 @@ if(!empty($_POST['snippet'])) {
 
 
         <?php if(!empty($tiny_snippet)):?>
-        <div class='textarea-wrap'><textarea><?php echo $tiny_snippet; ?></textarea></div>
+        <div class='textarea-wrap'><textarea ><?php echo $tiny_snippet; ?></textarea></div>
         <?php endif;?>
 
 
@@ -164,7 +137,7 @@ if(!empty($_POST['snippet'])) {
 </footer>
 
 <script src='//ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js'></script> 
-<script src='http://builtbyprime.com/js/action.js?v=1'></script>
+<script src='action.js?v=1'></script>
 <script>
 (function(d) {
   var textarea = d.getElementById('tiny-snippet');
