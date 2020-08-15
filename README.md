@@ -11,5 +11,3 @@ The Tiny PHP tool does not attempt to minify function names, class names, or any
 How I use it
 -------------
 There is really no reason to use this type of tool in production code. If you are just messing around though, it is sometimes nice to take a set of methods or functions, and condense them into four or five lines, if their only purpose is to simply exist and never be edited. Also, if an application has spiraled into a mess of variables that have absolutely no meaning, there becomes no difference between them being long and annoying, or short and sweet.
-
-*Give it a try*: [Tiny PHP](http://labs.builtbyprime.com/tinyphp/)
